@@ -46,7 +46,7 @@
         		$this.append('<li class="disabled"><a class="next" href="#">下一页</a></li>');
         		$this.append('<li><a class="last" href="#">&raquo;</a></li>');
         		
-        		if(c.maxPageButton > c.maxPages) {
+        		if(c.maxPageButton >= c.maxPages) {
         			$this.find('li a.next').parent().addClass("disabled");
             		$this.find('li a.last').parent().addClass("disabled");
             	}else {
